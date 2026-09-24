@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Dama Meghavardhan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#111827',
+                        borderBg: '#1f293d',
+                        accentBlue: '#3b82f6',
+                        accentPurple: '#8b5cf6',
+                        accentCyan: '#06b6d4',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="selection:bg-blue-500 selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card bg-opacity-80 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tight">
+                <span class="gradient-text">Meghavardhan</span><span class="text-blue-500">.</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-300">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="skills.html" class="hover:text-blue-400 transition">Skills</a>
+                <a href="projects.html" class="hover:text-blue-400 transition">Projects</a>
+                <a href="certificates.html" class="text-blue-400 font-bold">Certifications</a>
+                <a href="education.html" class="hover:text-blue-400 transition">Education</a>
+                 <a href="Learning.html" class="block text-gray-300 hover:text-blue-400 font-medium">Learning</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-card border-b border-gray-800 px-6 py-4 space-y-3">
+            <a href="index.html" class="block text-gray-300 hover:text-blue-400 font-medium">Home</a>
+            <a href="skills.html" class="block text-gray-300 hover:text-blue-400 font-medium">Skills</a>
+            <a href="projects.html" class="block text-gray-300 hover:text-blue-400 font-medium">Projects</a>
+            <a href="certificates.html" class="block text-blue-400 font-bold">Certifications</a>
+            <a href="education.html" class="block text-gray-300 hover:text-blue-400 font-medium">Education</a>
+           
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow pt-32 pb-20 px-6 max-w-6xl mx-auto w-full">
+        <h1 class="text-4xl font-extrabold text-center mb-4">
+            Professional <span class="gradient-text">Certifications</span>
+        </h1>
+        <p class="text-gray-400 text-center mb-12 max-w-lg mx-auto">Verified technical credentials across AI, Machine Learning, Data Preparation, and Software Engineering.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Certificate 1 -->
+            <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-3 bg-blue-500/10 text-blue-400 rounded-xl">
+                            <i class="fa-brands fa-ibm text-2xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-blue-400 font-mono tracking-wider uppercase block">IBM</span>
+                            <h3 class="font-bold text-white text-base">Introduction to Artificial Intelligence</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">Fundamental concepts of AI, neural networks, machine learning methodologies, and ethical considerations in AI implementation.</p>
+                </div>
+                <div class="pt-4 border-t border-gray-800 flex justify-between items-center text-xs text-gray-400">
+                    <span>Verified Credential</span>
+                    <i class="fa-solid fa-award text-blue-400"></i>
+                </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-3 bg-purple-500/10 text-purple-400 rounded-xl">
+                            <i class="fa-solid fa-brain text-2xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-purple-400 font-mono tracking-wider uppercase block">DeepLearning.AI</span>
+                            <h3 class="font-bold text-white text-base">AI for Everyone</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">Non-technical overview of AI capabilities, building AI strategy in organizations, and workflow of machine learning projects.</p>
+                </div>
+                <div class="pt-4 border-t border-gray-800 flex justify-between items-center text-xs text-gray-400">
+                    <span>Verified Credential</span>
+                    <i class="fa-solid fa-award text-purple-400"></i>
+                </div>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-3 bg-cyan-500/10 text-cyan-400 rounded-xl">
+                            <i class="fa-solid fa-chart-pie text-2xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-cyan-400 font-mono tracking-wider uppercase block">IBM</span>
+                            <h3 class="font-bold text-white text-base">Data Preparation for Machine Learning</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">Data cleaning techniques, feature transformation, handling missing values, and dataset preparation pipelines for predictive models.</p>
+                </div>
+                <div class="pt-4 border-t border-gray-800 flex justify-between items-center text-xs text-gray-400">
+                    <span>Verified Credential</span>
+                    <i class="fa-solid fa-award text-cyan-400"></i>
+                </div>
+            </div>
+
+            <!-- Certificate 4 -->
+            <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-3 bg-emerald-500/10 text-emerald-400 rounded-xl">
+                            <i class="fa-brands fa-microsoft text-2xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-emerald-400 font-mono tracking-wider uppercase block">Microsoft</span>
+                            <h3 class="font-bold text-white text-base">Introduction to Data Analysis using Excel</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">Data organization, Excel functions, Pivot tables, data filtering, and foundational analytical reporting using spreadsheets.</p>
+                </div>
+                <div class="pt-4 border-t border-gray-800 flex justify-between items-center text-xs text-gray-400">
+                    <span>Verified Credential</span>
+                    <i class="fa-solid fa-award text-emerald-400"></i>
+                </div>
+            </div>
+
+            <!-- Certificate 5 -->
+            <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-3 bg-orange-500/10 text-orange-400 rounded-xl">
+                            <i class="fa-solid fa-calculator text-2xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-orange-400 font-mono tracking-wider uppercase block">UC Irvine</span>
+                            <h3 class="font-bold text-white text-base">Introduction to Probability and Statistics</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">Core statistical principles, probability distributions, data collection methods, and inference foundational to Data Science.</p>
+                </div>
+                <div class="pt-4 border-t border-gray-800 flex justify-between items-center text-xs text-gray-400">
+                    <span>Verified Credential</span>
+                    <i class="fa-solid fa-award text-orange-400"></i>
+                </div>
+            </div>
+
+            <!-- Certificate 6 -->
+            <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-3 bg-indigo-500/10 text-indigo-400 rounded-xl">
+                            <i class="fa-brands fa-java text-2xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-indigo-400 font-mono tracking-wider uppercase block">UC Irvine</span>
+                            <h3 class="font-bold text-white text-base">Introduction to Java Programming</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">Object-oriented concepts, class design, inheritance, control structures, and software construction in Java.</p>
+                </div>
+                <div class="pt-4 border-t border-gray-800 flex justify-between items-center text-xs text-gray-400">
+                    <span>Verified Credential</span>
+                    <i class="fa-solid fa-award text-indigo-400"></i>
+                </div>
+            </div>
+
+            <!-- Certificate 7 -->
+            <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-3 bg-pink-500/10 text-pink-400 rounded-xl">
+                            <i class="fa-brands fa-python text-2xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-pink-400 font-mono tracking-wider uppercase block">IBM</span>
+                            <h3 class="font-bold text-white text-base">Python for Data Science, AI & Development</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">Python programming fundamentals, data structures, Pandas/Numpy basics, and API integration for AI projects.</p>
+                </div>
+                <div class="pt-4 border-t border-gray-800 flex justify-between items-center text-xs text-gray-400">
+                    <span>Verified Credential</span>
+                    <i class="fa-solid fa-award text-pink-400"></i>
+                </div>
+            </div>
+
+            <!-- Certificate 8 -->
+            <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-3 bg-teal-500/10 text-teal-400 rounded-xl">
+                            <i class="fa-solid fa-microchip text-2xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-teal-400 font-mono tracking-wider uppercase block">IBM</span>
+                            <h3 class="font-bold text-white text-base">Supervised Machine Learning Algorithms</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">Regression models, Decision Trees, SVMs, Logistic Regression, model selection, and accuracy validation.</p>
+                </div>
+                <div class="pt-4 border-t border-gray-800 flex justify-between items-center text-xs text-gray-400">
+                    <span>Verified Credential</span>
+                    <i class="fa-solid fa-award text-teal-400"></i>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800 text-center text-gray-500 text-xs">
+        <p>© 2026 Dama Meghavardhan. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile Navigation Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

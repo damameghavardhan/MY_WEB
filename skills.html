@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Dama Meghavardhan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#111827',
+                        borderBg: '#1f293d',
+                        accentBlue: '#3b82f6',
+                        accentPurple: '#8b5cf6',
+                        accentCyan: '#06b6d4',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="selection:bg-blue-500 selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card bg-opacity-80 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tight">
+                <span class="gradient-text">Meghavardhan</span><span class="text-blue-500">.</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-300">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="skills.html" class="text-blue-400 font-bold">Skills</a>
+                <a href="projects.html" class="hover:text-blue-400 transition">Projects</a>
+                <a href="certificates.html" class="hover:text-blue-400 transition">Certifications</a>
+                <a href="education.html" class="hover:text-blue-400 transition">Education</a>
+                 <a href="Learning.html" class="block text-gray-300 hover:text-blue-400 font-medium">Learning</a>   
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-card border-b border-gray-800 px-6 py-4 space-y-3">
+            <a href="index.html" class="block text-gray-300 hover:text-blue-400 font-medium">Home</a>
+            <a href="skills.html" class="block text-blue-400 font-bold">Skills</a>
+            <a href="projects.html" class="block text-gray-300 hover:text-blue-400 font-medium">Projects</a>
+            <a href="certificates.html" class="block text-gray-300 hover:text-blue-400 font-medium">Certifications</a>
+            <a href="education.html" class="block text-gray-300 hover:text-blue-400 font-medium">Education</a>
+            <a href="contact.html" class="block text-gray-300 hover:text-blue-400 font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow pt-32 pb-20 px-6 max-w-6xl mx-auto w-full">
+        <h1 class="text-4xl font-extrabold text-center mb-4">
+            Technical <span class="gradient-text">Skills</span>
+        </h1>
+        <p class="text-gray-400 text-center mb-12 max-w-lg mx-auto">A comprehensive breakdown of my programming languages, web technologies, and core machine learning competencies.</p>
+
+        <!-- Programming Languages & Web Technologies -->
+        <h2 class="text-xl font-bold mb-6 text-blue-400 flex items-center gap-2">
+            <i class="fa-solid fa-code"></i> Core Languages & Web Technologies
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            
+            <!-- Java -->
+            <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-brands fa-java text-3xl text-orange-500"></i>
+                        <h3 class="font-bold text-lg">Java</h3>
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20">Proficient</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Object-Oriented Programming (OOP), Data Structures & Algorithms, Application Logic.</p>
+                <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                    <div class="bg-gradient-to-r from-orange-500 to-amber-500 h-full rounded-full" style="width: 85%"></div>
+                </div>
+            </div>
+
+            <!-- Python -->
+            <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-brands fa-python text-3xl text-blue-400"></i>
+                        <h3 class="font-bold text-lg">Python</h3>
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">Advanced</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Machine Learning, OpenCV, Data Analysis, Scientific Computing & Scripting.</p>
+                <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                    <div class="bg-gradient-to-r from-blue-500 to-cyan-400 h-full rounded-full" style="width: 90%"></div>
+                </div>
+            </div>
+
+            <!-- C++ -->
+            <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-microchip text-3xl text-indigo-400"></i>
+                        <h3 class="font-bold text-lg">C++</h3>
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Intermediate</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Competitive Programming, Memory Management, Problem Solving, DSA.</p>
+                <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                    <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-full rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+
+            <!-- HTML5 -->
+            <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-brands fa-html5 text-3xl text-orange-600"></i>
+                        <h3 class="font-bold text-lg">HTML5</h3>
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-orange-600/10 text-orange-500 border border-orange-600/20">Proficient</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Semantic Web Structure, Responsive Layouts, Accessibility Best Practices.</p>
+                <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                    <div class="bg-gradient-to-r from-orange-600 to-red-500 h-full rounded-full" style="width: 92%"></div>
+                </div>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-brands fa-css3-alt text-3xl text-blue-500"></i>
+                        <h3 class="font-bold text-lg">CSS3</h3>
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-600/10 text-blue-400 border border-blue-600/20">Proficient</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Responsive Design, Flexbox, Grid, Glassmorphic Styling, Animations.</p>
+                <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                    <div class="bg-gradient-to-r from-blue-600 to-cyan-500 h-full rounded-full" style="width: 88%"></div>
+                </div>
+            </div>
+
+            <!-- Microsoft Excel -->
+            <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-file-excel text-3xl text-emerald-500"></i>
+                        <h3 class="font-bold text-lg">Microsoft Excel</h3>
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Advanced</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Data Cleaning, Preparation, Pivot Tables, Formulas & Analytical Modeling.</p>
+                <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                    <div class="bg-gradient-to-r from-emerald-500 to-teal-400 h-full rounded-full" style="width: 85%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI & Core Engineering Competencies -->
+        <h2 class="text-xl font-bold mb-6 text-purple-400 flex items-center gap-2">
+            <i class="fa-solid fa-brain"></i> AI, Data & Core Engineering Competencies
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass-card p-6 rounded-2xl">
+                <div class="p-3 bg-purple-500/10 text-purple-400 rounded-xl w-fit mb-3">
+                    <i class="fa-solid fa-robot text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Machine Learning</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">Supervised Learning algorithms, Regression models, Classification techniques, and Model evaluation.</p>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl">
+                <div class="p-3 bg-cyan-500/10 text-cyan-400 rounded-xl w-fit mb-3">
+                    <i class="fa-solid fa-chart-line text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Data Preparation & Analysis</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">Data wrangling, feature engineering, missing value treatment, and insight extraction using Excel & Python.</p>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl">
+                <div class="p-3 bg-blue-500/10 text-blue-400 rounded-xl w-fit mb-3">
+                    <i class="fa-solid fa-calculator text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Probability & Statistics</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">Statistical distributions, hypothesis testing, probability theory for Data Science and AI models.</p>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl">
+                <div class="p-3 bg-green-500/10 text-green-400 rounded-xl w-fit mb-3">
+                    <i class="fa-solid fa-lightbulb text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Problem Solving</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">Algorithmic thinking, optimization strategies, continuous learning, and logical application design.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800 text-center text-gray-500 text-xs">
+        <p>© 2026 Dama Meghavardhan. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile Navigation Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

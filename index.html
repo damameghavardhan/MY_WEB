@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dama Meghavardhan | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+:root{
+    --bg:#0b1120;
+    --card:#111827;
+    --primary:#3b82f6;
+    --secondary:#8b5cf6;
+    --cyan:#06b6d4;
+    --text:#f8fafc;
+    --light:#cbd5e1;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+/* Background Animation */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:radial-gradient(var(--primary),transparent);
+    top:-200px;
+    left:-150px;
+    opacity:.2;
+    filter:blur(80px);
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:radial-gradient(var(--secondary),transparent);
+    bottom:-250px;
+    right:-150px;
+    opacity:.2;
+    filter:blur(80px);
+    z-index:-1;
+}
+
+/* Navbar */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(15px);
+    background:rgba(17,24,39,.7);
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    padding:18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    background:linear-gradient(45deg,#60a5fa,#a78bfa,#22d3ee);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,.1);
+    backdrop-filter:blur(10px);
+    margin-bottom:25px;
+    color:#60a5fa;
+}
+
+.hero h1{
+    font-size:70px;
+    margin-bottom:20px;
+    line-height:1.1;
+}
+
+.gradient{
+    background:linear-gradient(45deg,#60a5fa,#a78bfa,#22d3ee);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    color:var(--light);
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btns{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 30px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.primary{
+    background:linear-gradient(45deg,#2563eb,#7c3aed);
+    color:white;
+}
+
+.secondary{
+    border:1px solid rgba(255,255,255,.2);
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+/* Stats */
+
+.stats{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    padding:50px 20px;
+}
+
+.stat-card{
+    background:rgba(17,24,39,.7);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+}
+
+.stat-card h2{
+    color:#60a5fa;
+    font-size:40px;
+}
+
+/* Skills */
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(17,24,39,.8);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(59,130,246,.2);
+}
+
+.card i{
+    font-size:50px;
+    margin-bottom:15px;
+    color:#60a5fa;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:var(--light);
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid rgba(255,255,255,.1);
+    color:#94a3b8;
+}
+
+.social{
+    margin-top:20px;
+}
+
+.social a{
+    color:white;
+    font-size:25px;
+    margin:0 10px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#60a5fa;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:45px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="nav-container">
+
+<div class="logo">Welcome To My Page </div>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="skills.html">Skills</a>
+<a href="learning.html">Learning</a>
+<a href="projects.html">Projects</a>
+<a href="certificates.html">Certificates</a>
+<a href="education.html">Education</a>
+<a href="resume.html">Resume</a>
+</div>
+
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+🚀 Open For Opportunities
+</div>
+
+<h1>
+Hi, I'm
+<span class="gradient">Dama Meghavardhan</span>
+</h1>
+
+<p>
+3rd Year B.Tech CSE (AI & ML) Student at Mohan Babu University.
+Passionate about Software Development, Artificial Intelligence,
+Machine Learning, Data Analytics and Problem Solving.
+</p>
+
+<div class="btns">
+<a href="resume.html" class="btn primary">View Resume</a>
+<a href="projects.html" class="btn secondary">View Projects</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat-card">
+<h2>3rd</h2>
+<p>Year Student</p>
+</div>
+
+<div class="stat-card">
+<h2>8+</h2>
+<p>Certifications</p>
+</div>
+
+<div class="stat-card">
+<h2>6+</h2>
+<p>Technologies</p>
+</div>
+
+<div class="stat-card">
+<h2>2+</h2>
+<p>Projects</p>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Technical Skills
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<i class="fa-brands fa-java"></i>
+<h3>Java</h3>
+<p>Core Java, OOP, Collections, JDBC</p>
+</div>
+
+<div class="card">
+<i class="fa-brands fa-python"></i>
+<h3>Python</h3>
+<p>NumPy, Pandas, Analytics, ML</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-code"></i>
+<h3>C++</h3>
+<p>STL, OOP, DSA</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-database"></i>
+<h3>SQL</h3>
+<p>Queries, Joins, Procedures</p>
+</div>
+
+<div class="card">
+<i class="fa-brands fa-html5"></i>
+<h3>HTML</h3>
+<p>Semantic Web Design</p>
+</div>
+
+<div class="card">
+<i class="fa-brands fa-css3-alt"></i>
+<h3>CSS</h3>
+<p>Flexbox, Grid, Responsive Design</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Dama Meghavardhan</h3>
+<p>B.Tech CSE (AI & ML) | Mohan Babu University</p>
+
+<div class="social">
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+<a href="mailto:damamegha3006@gmail.com">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+
+<p style="margin-top:20px;">
+© 2026 Dama Meghavardhan. All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>

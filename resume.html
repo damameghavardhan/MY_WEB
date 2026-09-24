@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Dama Meghavardhan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#111827',
+                        borderBg: '#1f293d',
+                        accentBlue: '#3b82f6',
+                        accentPurple: '#8b5cf6',
+                        accentCyan: '#06b6d4',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-btn {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+        }
+        .gradient-btn:hover {
+            background: linear-gradient(135deg, #1d4ed8, #6d28d9);
+        }
+        @media print {
+            nav, footer, .no-print {
+                display: none !important;
+            }
+            body {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+                padding-top: 0 !important;
+            }
+            .glass-card {
+                background: #ffffff !important;
+                border: 1px solid #dddddd !important;
+                box-shadow: none !important;
+                color: #000000 !important;
+            }
+            .gradient-text {
+                -webkit-text-fill-color: #000000 !important;
+                color: #000000 !important;
+            }
+            h1, h2, h3, h4, p, span, li, a {
+                color: #000000 !important;
+            }
+        }
+    </style>
+</head>
+<body class="selection:bg-blue-500 selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card bg-opacity-80 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tight">
+                <span class="gradient-text">Meghavardhan</span><span class="text-blue-500">.</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-300">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="skills.html" class="hover:text-blue-400 transition">Skills</a>
+                <a href="projects.html" class="hover:text-blue-400 transition">Projects</a>
+                <a href="certificates.html" class="hover:text-blue-400 transition">Certifications</a>
+                <a href="education.html" class="hover:text-blue-400 transition">Education</a>
+                <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-card border-b border-gray-800 px-6 py-4 space-y-3">
+            <a href="index.html" class="block text-gray-300 hover:text-blue-400 font-medium">Home</a>
+            <a href="skills.html" class="block text-gray-300 hover:text-blue-400 font-medium">Skills</a>
+            <a href="projects.html" class="block text-gray-300 hover:text-blue-400 font-medium">Projects</a>
+            <a href="certificates.html" class="block text-gray-300 hover:text-blue-400 font-medium">Certifications</a>
+            <a href="education.html" class="block text-gray-300 hover:text-blue-400 font-medium">Education</a>
+             <a href="Learning.html" class="block text-gray-300 hover:text-blue-400 font-medium">Learning</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow pt-32 pb-20 px-6 max-w-4xl mx-auto w-full">
+        <!-- Print Header / Action -->
+        <div class="flex justify-between items-center mb-8 no-print">
+            <h1 class="text-3xl font-extrabold">Curriculum <span class="gradient-text">Vitae</span></h1>
+            <button onclick="window.print()" class="gradient-btn px-5 py-2.5 rounded-xl text-white font-semibold text-sm flex items-center gap-2 shadow-lg transition">
+                <i class="fa-solid fa-print"></i> Print / Download PDF
+            </button>
+        </div>
+
+        <!-- Resume Document Paper Container -->
+        <div class="glass-card rounded-2xl p-8 md:p-12 space-y-10">
+
+            <!-- Header Section -->
+            <div class="border-b border-gray-800 pb-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <h2 class="text-3xl font-bold text-white tracking-tight mb-2">Dama Meghavardhan</h2>
+                    <p class="text-blue-400 font-semibold text-sm mb-3">Computer Science Engineering Student (AI & ML Specialization)</p>
+                    <p class="text-gray-400 text-xs">Mohan Babu University | Batch of 2028</p>
+                </div>
+                <div class="text-xs text-gray-300 space-y-2 text-center md:text-right">
+                    <p><i class="fa-solid fa-envelope text-blue-400 mr-2"></i> damamegha3006@gmail.com</p>
+                    <p><i class="fa-brands fa-linkedin text-blue-400 mr-2"></i> linkedin.com</p>
+                    <p><i class="fa-brands fa-github text-blue-400 mr-2"></i> github.com</p>
+                </div>
+            </div>
+
+            <!-- Objective / Summary -->
+            <div>
+                <h3 class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-user"></i> Professional Summary
+                </h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Dedicated 3rd-year B.Tech Computer Science and Engineering student specializing in Artificial Intelligence & Machine Learning at Mohan Babu University. Equipped with practical programming expertise in Java, C++, Python, HTML, and CSS, alongside strong foundational knowledge in Machine Learning algorithms, Computer Vision, and Data Analytics. Highly passionate about building scalable, intelligent solutions and leveraging software engineering best practices.
+                </p>
+            </div>
+
+            <!-- Education -->
+            <div>
+                <h3 class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-graduation-cap"></i> Education
+                </h3>
+                <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-800 flex justify-between items-start">
+                    <div>
+                        <h4 class="font-bold text-white text-base">Bachelor of Technology (B.Tech) - CSE (AI & ML)</h4>
+                        <p class="text-xs text-purple-400 font-medium">Mohan Babu University</p>
+                        <p class="text-xs text-gray-400 mt-2">Relevant Coursework: Artificial Intelligence, Machine Learning, Data Structures & Algorithms, Java Programming, SQL, Probability & Statistics.</p>
+                    </div>
+                    <span class="text-xs text-gray-400 font-mono bg-gray-800 px-3 py-1 rounded-full whitespace-nowrap">2024 – 2028</span>
+                </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div>
+                <h3 class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-code"></i> Technical Skills
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-800">
+                        <span class="font-bold text-gray-200 block mb-2">Programming Languages:</span>
+                        <p class="text-gray-400">Java, Python, C++, SQL</p>
+                    </div>
+                    <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-800">
+                        <span class="font-bold text-gray-200 block mb-2">Web & Design Technologies:</span>
+                        <p class="text-gray-400">HTML5, CSS3, Tailwind CSS</p>
+                    </div>
+                    <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-800">
+                        <span class="font-bold text-gray-200 block mb-2">AI, ML & Frameworks:</span>
+                        <p class="text-gray-400">Machine Learning, OpenCV, Data Cleaning & Wrangling</p>
+                    </div>
+                    <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-800">
+                        <span class="font-bold text-gray-200 block mb-2">Data Tools & Competencies:</span>
+                        <p class="text-gray-400">Microsoft Excel (Pivot Tables, Functions), Problem Solving, Statistical Analysis</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Projects -->
+            <div>
+                <h3 class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-diagram-project"></i> Key Projects
+                </h3>
+                <div class="space-y-4 text-xs">
+                    <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-800">
+                        <div class="flex justify-between font-bold text-sm text-white mb-1">
+                            <span>Emergency Vehicle Priority System</span>
+                            <span class="text-blue-400 text-xs font-normal">Python, OpenCV</span>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">
+                            Developed a real-time computer vision system capable of identifying emergency vehicles from live video feeds and dynamically altering traffic signal priority.
+                        </p>
+                    </div>
+                    <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-800">
+                        <div class="flex justify-between font-bold text-sm text-white mb-1">
+                            <span>Student Admission Portal</span>
+                            <span class="text-purple-400 text-xs font-normal">HTML5, CSS3</span>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">
+                            Built a responsive web application designed for seamless student registration and document management with clean UI design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div>
+                <h3 class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-award"></i> Certifications
+                </h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-gray-300">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> Introduction to Artificial Intelligence (IBM)</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> AI for Everyone (DeepLearning.AI)</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> Data Preparation for Machine Learning (IBM)</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> Python for Data Science, AI & Dev (IBM)</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> Supervised ML Algorithms (IBM)</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> Data Analysis using Excel (Microsoft)</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> Introduction to Java (UC Irvine)</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> Probability and Statistics (UC Irvine)</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800 text-center text-gray-500 text-xs no-print">
+        <p>© 2026 Dama Meghavardhan. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile Navigation Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

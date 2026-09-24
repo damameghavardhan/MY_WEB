@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning Hub | Dama Meghavardhan</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* Navigation Bar */
+nav{
+    background:#1e293b;
+    padding:18px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* Main Container */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 0;
+}
+
+.heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.heading h1{
+    font-size:42px;
+    color:#60a5fa;
+}
+
+.heading p{
+    color:#cbd5e1;
+    margin-top:10px;
+    font-size:18px;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+    border:2px solid transparent;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#3b82f6;
+    box-shadow:0 0 20px rgba(59,130,246,0.3);
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#60a5fa;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:1.6;
+}
+
+.learn-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 18px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+    background:#1e293b;
+    color:#cbd5e1;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="learning.html">Learning</a>
+    <a href="projects.html">Projects</a>
+    <a href="certificates.html">Certificates</a>
+    <a href="education.html">Education</a>
+    <a href="resume.html">Resume</a>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+
+    <div class="heading">
+        <h1>Learning Hub</h1>
+        <p>Select a technology to start learning</p>
+    </div>
+
+    <div class="card-container">
+
+        <a href="java.html" class="card">
+            <h2>Java</h2>
+            <p>
+                Learn Java from basics to advanced concepts including
+                OOP, Classes, Objects, Inheritance, Polymorphism,
+                Collections Framework, Exception Handling, JDBC and more.
+            </p>
+            <span class="learn-btn">Learn Java</span>
+        </a>
+
+        <a href="python.html" class="card">
+            <h2>Python</h2>
+            <p>
+                Learn Python programming including Variables,
+                Functions, OOP, NumPy, Pandas, File Handling,
+                Data Analysis and Machine Learning basics.
+            </p>
+            <span class="learn-btn">Learn Python</span>
+        </a>
+
+        <a href="cpp.html" class="card">
+            <h2>C++</h2>
+            <p>
+                Learn C++ with STL, Classes, Objects,
+                Pointers, Memory Management,
+                Data Structures and Algorithms.
+            </p>
+            <span class="learn-btn">Learn C++</span>
+        </a>
+
+        <a href="sql.html" class="card">
+            <h2>SQL</h2>
+            <p>
+                Learn Database concepts, Queries,
+                Joins, Views, Triggers, Procedures,
+                Normalization and Database Design.
+            </p>
+            <span class="learn-btn">Learn SQL</span>
+        </a>
+
+        <a href="html.html" class="card">
+            <h2>HTML</h2>
+            <p>
+                Learn HTML5 including Elements,
+                Forms, Tables, Lists, Multimedia,
+                Semantic Tags and Web Structure.
+            </p>
+            <span class="learn-btn">Learn HTML</span>
+        </a>
+
+        <a href="css.html" class="card">
+            <h2>CSS</h2>
+            <p>
+                Learn CSS including Selectors,
+                Box Model, Flexbox, Grid,
+                Animations and Responsive Design.
+            </p>
+            <span class="learn-btn">Learn CSS</span>
+        </a>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Dama Meghavardhan | Learning Hub
+</footer>
+
+</body>
+</html>

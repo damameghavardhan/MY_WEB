@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Dama Meghavardhan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#111827',
+                        borderBg: '#1f293d',
+                        accentBlue: '#3b82f6',
+                        accentPurple: '#8b5cf6',
+                        accentCyan: '#06b6d4',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="selection:bg-blue-500 selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card bg-opacity-80 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tight">
+                <span class="gradient-text">Meghavardhan</span><span class="text-blue-500">.</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-300">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="skills.html" class="hover:text-blue-400 transition">Skills</a>
+                <a href="projects.html" class="text-blue-400 font-bold">Projects</a>
+                <a href="certificates.html" class="hover:text-blue-400 transition">Certifications</a>
+                <a href="education.html" class="hover:text-blue-400 transition">Education</a>
+                <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-card border-b border-gray-800 px-6 py-4 space-y-3">
+            <a href="index.html" class="block text-gray-300 hover:text-blue-400 font-medium">Home</a>
+            <a href="skills.html" class="block text-gray-300 hover:text-blue-400 font-medium">Skills</a>
+            <a href="projects.html" class="block text-blue-400 font-bold">Projects</a>
+            <a href="certificates.html" class="block text-gray-300 hover:text-blue-400 font-medium">Certifications</a>
+            <a href="education.html" class="block text-gray-300 hover:text-blue-400 font-medium">Education</a>
+             <a href="Learning.html" class="block text-gray-300 hover:text-blue-400 font-medium">Learning</a>
+           
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow pt-32 pb-20 px-6 max-w-6xl mx-auto w-full">
+        <h1 class="text-4xl font-extrabold text-center mb-4">
+            Featured <span class="gradient-text">Projects</span>
+        </h1>
+        <p class="text-gray-400 text-center mb-12 max-w-lg mx-auto">Practical software implementations utilizing Computer Vision, Python, HTML5, and CSS3.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Project 1: Emergency Vehicle Priority System -->
+            <div class="glass-card rounded-2xl p-8 flex flex-col justify-between hover:scale-[1.01] transition duration-300">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="p-3 bg-blue-500/10 rounded-xl text-blue-400 text-3xl border border-blue-500/20">
+                            <i class="fa-solid fa-car-burst"></i>
+                        </div>
+                        <span class="text-xs font-mono bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">Computer Vision</span>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3 text-white">Emergency Vehicle Priority System</h2>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        An automated traffic control mechanism engineered using Python and OpenCV to detect approaching emergency vehicles (ambulances, fire engines, police vehicles). The system processes video streams in real-time, isolates vehicle visual features, and dynamically overrides traffic signal timers to grant priority passages.
+                    </p>
+                    <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Real-time frame analysis with OpenCV</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Automated priority path allocation logic</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Efficient Python backend implementation</li>
+                    </ul>
+                </div>
+                <div class="pt-4 border-t border-gray-800 flex flex-wrap gap-2">
+                    <span class="text-xs bg-gray-900 text-gray-300 px-2.5 py-1 rounded-md border border-gray-800">Python</span>
+                    <span class="text-xs bg-gray-900 text-gray-300 px-2.5 py-1 rounded-md border border-gray-800">OpenCV</span>
+                    <span class="text-xs bg-gray-900 text-gray-300 px-2.5 py-1 rounded-md border border-gray-800">Computer Vision</span>
+                </div>
+            </div>
+
+            <!-- Project 2: Student Admission Portal -->
+            <div class="glass-card rounded-2xl p-8 flex flex-col justify-between hover:scale-[1.01] transition duration-300">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="p-3 bg-purple-500/10 rounded-xl text-purple-400 text-3xl border border-purple-500/20">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="text-xs font-mono bg-purple-500/10 text-purple-400 px-3 py-1 rounded-full border border-purple-500/20">Web Development</span>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3 text-white">Student Admission Portal</h2>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        A structured web application crafted using HTML5 and CSS3 designed to streamline student registration, application submission, and record management. Features a clean multi-step form structure, responsive navigation, and user-friendly visual feedback.
+                    </p>
+                    <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Responsive layout for desktop and mobile devices</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Semantic HTML5 forms & input validation UI</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Modern CSS styling & component architecture</li>
+                    </ul>
+                </div>
+                <div class="pt-4 border-t border-gray-800 flex flex-wrap gap-2">
+                    <span class="text-xs bg-gray-900 text-gray-300 px-2.5 py-1 rounded-md border border-gray-800">HTML5</span>
+                    <span class="text-xs bg-gray-900 text-gray-300 px-2.5 py-1 rounded-md border border-gray-800">CSS3</span>
+                    <span class="text-xs bg-gray-900 text-gray-300 px-2.5 py-1 rounded-md border border-gray-800">UI Web Design</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800 text-center text-gray-500 text-xs">
+        <p>© 2026 Dama Meghavardhan. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile Navigation Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
